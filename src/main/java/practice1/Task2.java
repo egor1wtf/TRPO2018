@@ -9,7 +9,7 @@ import java.util.regex.Pattern;
 public class Task2 {
     public static void main(String[] args) {
         //проверка даты
-        System.out.println("Задание 2\nВведите дату:");
+        System.out.println("Задание 2\nEnter date like {dd.MM.yyyy}:");
         Scanner scanner = new Scanner(System.in);
         String text = scanner.next();
         SimpleDateFormat sdf = new SimpleDateFormat("dd.MM.yyyy");
@@ -22,7 +22,7 @@ public class Task2 {
         }
 
         //проверка email
-        System.out.println("Введите email: ");
+        System.out.println("Enter you email: ");
         Pattern pattern = Pattern.compile("^([a-z0-9_\\.-]+)@([a-z0-9_\\.-]+)\\.([a-z\\.]{2,6})$");
         text = scanner.next();
         Matcher matcher = pattern.matcher(text);
